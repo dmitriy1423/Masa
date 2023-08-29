@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/menu/menu';
+import initSliders from './modules/sliders/sliders';
 
 // ---------------------------------
 
@@ -25,6 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const burger = new Burger();
     burger.init();
   });
+
+  initSliders();
 });
 
 // ---------------------------------

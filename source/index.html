@@ -21,7 +21,7 @@
             Маса - образовательный проект
           </h1>
           <a class="header__logo logo" href="index.html">
-            <img src="img/sprite/icon-logo.svg" width="58" height="58" alt="Логотип проекта Маса.">
+            <img src="img/sprite/icon-logo.svg" width="52" height="52" alt="Логотип проекта Маса.">
           </a>
           <nav class="header__nav">
             <ul class="header__list">
@@ -31,22 +31,24 @@
                 </a>
               </li>
               <li class="header__item">
-                <details>
+                <details class="header__details">
                   <summary>
                     Программы
                   </summary>
-                  <a class="header__link" href="#">
-                    Стажировки
-                  </a>
-                  <a class="header__link" href="#">
-                    Волонтёрство
-                  </a>
-                  <a class="header__link" href="#">
-                    Учеба
-                  </a>
-                  <a class="header__link" href="#">
-                    Религия
-                  </a>
+                  <div class="header__details-items">
+                    <a class="header__link header__link--current" href="#">
+                      Стажировки
+                    </a>
+                    <a class="header__link" href="#">
+                      Волонтёрство
+                    </a>
+                    <a class="header__link" href="#">
+                      Учеба
+                    </a>
+                    <a class="header__link" href="#">
+                      Религия
+                    </a>
+                  </div>
                 </details>
               </li>
               <li class="header__item">
@@ -60,22 +62,24 @@
                 </a>
               </li>
               <li class="header__item">
-                <details>
+                <details class="header__details">
                   <summary>
                     Новости
                   </summary>
-                  <a class="header__link" href="#">
-                    Стажировки
-                  </a>
-                  <a class="header__link" href="#">
-                    Волонтёрство
-                  </a>
-                  <a class="header__link" href="#">
-                    Учеба
-                  </a>
-                  <a class="header__link" href="#">
-                    Религия
-                  </a>
+                  <div class="header__details-items">
+                    <a class="header__link" href="#">
+                      Стажировки
+                    </a>
+                    <a class="header__link" href="#">
+                      Волонтёрство
+                    </a>
+                    <a class="header__link" href="#">
+                      Учеба
+                    </a>
+                    <a class="header__link" href="#">
+                      Религия
+                    </a>
+                  </div>
                 </details>
               </li>
               <li class="header__item">
@@ -89,26 +93,105 @@
               <span></span>
             </button>
           </nav>
+          <div class="header__overlay" data-close-menu></div>
         </div>
       </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+      <section class="hero">
+        <div class="hero__slider swiper">
+          <div class="swiper-wrapper hero__slider-wrapper">
+            <div class="swiper-slide hero__slider-item">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/hero-photo-1-mobile@1x.jpg 1x, img/hero-photo-1-mobile@2x.jpg 2x" width="320" height="289">
+                <source media="(max-width: 1199px)" srcset="img/hero-photo-1-tablet@1x.jpg 1x, img/hero-photo-1-tablet@2x.jpg 2x" width="768" height="1024">
+                <img src="img/hero-photo-1-desktop@1x.jpg" srcset="img/hero-photo-1-desktop@1x.jpg 1x, img/hero-photo-1-desktop@2x.jpg 2x" width="1440" height="800" alt="Стажировки в компаниях Израиля.">
+              </picture>
+              <div class="container">
+                <div class="hero__slider-item-content">
+                  <div class="hero__slider-item-title">
+                    <h2>
+                      Программы стажировок в&nbsp;крупнейших компаниях Израиля
+                    </h2>
+                  </div>
+                  <div class="hero__slider-item-text-content">
+                    <p>
+                      Получите незаменимый опыт работы в&nbsp;ведущих израильских компаниях и&nbsp;государственных организациях.
+                    </p>
+                    <div class="hero__slider-item-btn">
+                      <a class="btn" href="#">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slider-item-overlay"></div>
+            </div>
+            <div class="swiper-slide hero__slider-item">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/hero-photo-2-mobile@1x.jpg 1x, img/hero-photo-2-mobile@2x.jpg 2x" width="320" height="289">
+                <source media="(max-width: 1199px)" srcset="img/hero-photo-2-tablet@1x.jpg 1x, img/hero-photo-2-tablet@2x.jpg 2x" width="768" height="1024">
+                <img src="img/hero-photo-2-desktop@1x.jpg" srcset="img/hero-photo-2-desktop@1x.jpg 1x, img/hero-photo-2-desktop@2x.jpg 2x" width="1440" height="800" alt="Волонтёрские программы.">
+              </picture>
+              <div class="container">
+                <div class="hero__slider-item-content">
+                  <div class="hero__slider-item-title">
+                    <h2>
+                      Волонтёрские программы &mdash;внесите свой вклад в&nbsp;общество
+                    </h2>
+                  </div>
+                  <div class="hero__slider-item-text-content">
+                    <p>
+                      Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и&nbsp;другое.
+                    </p>
+                    <div class="hero__slider-item-btn">
+                      <a class="btn" href="#">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slider-item-overlay"></div>
+            </div>
+            <div class="swiper-slide hero__slider-item">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/hero-photo-3-mobile@1x.jpg 1x, img/hero-photo-3-mobile@2x.jpg 2x" width="320" height="289">
+                <source media="(max-width: 1199px)" srcset="img/hero-photo-3-tablet@1x.jpg 1x, img/hero-photo-3-tablet@2x.jpg 2x" width="768" height="1024">
+                <img src="img/hero-photo-3-desktop@1x.jpg" srcset="img/hero-photo-3-desktop@1x.jpg 1x, img/hero-photo-3-desktop@2x.jpg 2x" width="1440" height="800" alt="Опыт за рубежом.">
+              </picture>
+              <div class="container">
+                <div class="hero__slider-item-content">
+                  <div class="hero__slider-item-title">
+                    <h2>
+                      Глобальный профессиональный опыт обучения за&nbsp;рубежом
+                    </h2>
+                  </div>
+                  <div class="hero__slider-item-text-content">
+                    <p>
+                      Погрузитесь в&nbsp;академическую программу, проходя практику в&nbsp;Тель-Авиве и&nbsp;ощущая настоящий израильский стиль жизни!
+                    </p>
+                    <div class="hero__slider-item-btn">
+                      <a class="btn" href="#">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__slider-item-overlay"></div>
+            </div>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
+          <div class="hero__slider-pagination-wrapper">
+            <div class="container">
+              <div class="hero__slider-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
+    <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -120,9 +203,9 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -134,7 +217,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

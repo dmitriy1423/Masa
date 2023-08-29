@@ -69,9 +69,5 @@ export class Burger {
     if (evt.target.hasAttribute('data-close-menu')) {
       this._closeMenu();
     }
-
-    if (evt.target.className.includes('header__overlay')) {
-      this._closeMenu();
-    }
   }
 }
