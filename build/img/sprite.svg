@@ -11,6 +11,8 @@
 
 </g></symbol><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol><symbol id="icon-details-arrow" viewBox="0 0 12 12"><g fill="none">
 <path d="M11.455 3.81836L6.00044 8.72745L0.545898 3.81836" stroke="white"/>
+</g></symbol><symbol id="icon-feature-star" viewBox="0 0 22 22"><g fill="none">
+<path d="M11 0L14.0138 5.47476L20 5.5L17.0275 11L20 16.5L14.0138 16.5252L11 22L7.98623 16.5252L2 16.5L4.97246 11L2 5.5L7.98623 5.47476L11 0Z" fill="white"/>
 </g></symbol><symbol id="icon-logo" viewBox="0 0 52 52"><g fill="none">
 <rect width="52" height="52" rx="26" fill="white"/>
 <path d="M12 39.8701V33.633H12.6763L15.5115 38.8782L18.3318 33.633H19.0181V39.8657H18.3168V35.0536L15.747 39.8701H15.2711L12.7063 35.0536V39.8701H12Z" fill="#316DC2"/>

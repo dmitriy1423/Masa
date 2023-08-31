@@ -1,0 +1,149 @@
+.footer {
+  background-color: $color-background-default;
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 52px auto auto;
+    align-items: center;
+    gap: 25px 52px;
+
+    @include vp-1199 {
+      grid-template-columns: 52px auto;
+      gap: 25px 74px;
+    }
+
+    @include vp-767 {
+      padding-top: 30px;
+      padding-bottom: 40px;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 0;
+    }
+  }
+}
+
+.footer__logo {
+  grid-column: 1 / 2;
+
+  @include vp-1199 {
+    justify-self: center;
+    grid-row: 1 / 2;
+  }
+
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__list {
+  grid-column: 2 / 3;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @include vp-1199 {
+    gap: 15px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 15px;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    gap: 7px 20px;
+    justify-content: center;
+  }
+}
+
+.footer__link {
+  font-size: 16px;
+  line-height: 26px;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.footer__social-list {
+  grid-column: 3 / -1;
+  justify-self: flex-end;
+
+  @include vp-1199 {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+  }
+
+  @include vp-767 {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    justify-self: center;
+  }
+}
+
+.footer__copyright {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    font-size: 14px;
+    line-height: 18px;
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 12px;
+      opacity: 0.6;
+    }
+  }
+
+  @include vp-1199 {
+    grid-row: 2 / 3;
+    width: fit-content;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 15px;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.footer__copyright-link {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-default-black;
+  }
+
+  @include vp-1199 {
+    width: fit-content;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 2px;
+  }
+}

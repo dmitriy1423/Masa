@@ -1,0 +1,35 @@
+.features {
+  background-color: $color-background-default;
+
+  /* .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: $color-background-blue;
+  } */
+}
+
+.features__list {
+  margin: 0;
+  padding: 89px 106px 53px 126px;
+  list-style: none;
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 52px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 54px 52px;
+  color: $color-default-white;
+  background-color: $color-background-blue;
+  border-radius: 20px;
+
+  @include vp-1199 {
+    padding: 61px 40px 40px 60px;
+    gap: 42px 50px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 42px 20px 40px 30px;
+  }
+}
