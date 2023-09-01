@@ -1,7 +1,9 @@
 .btn {
   position: relative;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: auto 46px;
   align-items: center;
+  max-width: 500px;
   gap: 23px;
   padding: 4px 4px 4px 30px;
   color: $color-btn-default;
@@ -90,6 +92,31 @@
     &::after {
       background-color: $color-form-disabled;
     }
+  }
+
+  &--no-text {
+    grid-template-columns: auto;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    gap: 0;
+    background-color: $color-btn-default;
+
+    &::before {
+      right: 50%;
+      transform: translate(50%, 0);
+      width: 8px;
+      height: 8px;
+      mask-size: 8px 8px;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  @include vp-1199 {
+    grid-template-columns: auto 34px;
   }
 
   @include vp-767 {

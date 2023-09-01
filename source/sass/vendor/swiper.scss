@@ -378,17 +378,14 @@ button.swiper-pagination-bullet {
 }
 /* Scrollbar */
 .swiper-scrollbar {
-  border-radius: 10px;
   position: relative;
   -ms-touch-action: none;
-  background: rgba(0, 0, 0, 0.1);
 }
 .swiper-horizontal > .swiper-scrollbar {
   position: absolute;
-  left: 1%;
   bottom: 3px;
   z-index: 50;
-  height: 5px;
+  height: 2px;
   width: 98%;
 }
 .swiper-vertical > .swiper-scrollbar {
@@ -397,7 +394,7 @@ button.swiper-pagination-bullet {
   top: 1%;
   z-index: 50;
   width: 5px;
-  height: 98%;
+  height: 100%;
 }
 .swiper-scrollbar-drag {
   height: 100%;

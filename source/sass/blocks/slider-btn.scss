@@ -1,0 +1,36 @@
+.slider-btn {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+
+  &:hover:not(.swiper-button-disabled),
+  &:focus:not(.swiper-button-disabled) {
+    background-color: $color-background-additional;
+  }
+
+  &:active:not(.swiper-button-disabled) {
+    background-color: $color-background-additional;
+
+    .slider-btn__icon {
+      opacity: 0.7;
+    }
+  }
+
+  &.swiper-button-disabled {
+    background-color: transparent;
+    pointer-events: none;
+
+    .slider-btn__icon {
+      stroke: $color-btn-disabled;
+    }
+  }
+}
+
+.slider-btn__icon {
+  stroke: $color-icon-default;
+}
