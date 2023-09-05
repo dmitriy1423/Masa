@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/menu/menu';
 import initSliders from './modules/sliders/sliders';
+import initFilter from './modules/filter/filter';
 
 // ---------------------------------
 
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   initSliders();
+  initFilter();
 });
 
 // ---------------------------------
