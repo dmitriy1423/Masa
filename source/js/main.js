@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/menu/menu';
 import initSliders from './modules/sliders/sliders';
 import initFilter from './modules/filter/filter';
+import {initAccordion} from './modules/accordion/accordion';
 
 // ---------------------------------
 
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   initSliders();
   initFilter();
+  initAccordion();
 });
 
 // ---------------------------------
