@@ -5,6 +5,7 @@ import {Burger} from './modules/menu/menu';
 import initSliders from './modules/sliders/sliders';
 import initFilter from './modules/filter/filter';
 import {initAccordion} from './modules/accordion/accordion';
+import initMap from './modules/map/map';
 
 // ---------------------------------
 
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initSliders();
   initFilter();
   initAccordion();
+  initMap();
 });
 
 // ---------------------------------

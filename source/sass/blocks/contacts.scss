@@ -1,0 +1,152 @@
+.contacts {
+  color: $color-default-white;
+  background-color: $color-background-blue;
+
+  .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include vp-1199 {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    @include vp-767 {
+      padding-top: 72px;
+      padding-bottom: 67px;
+    }
+  }
+}
+
+.contacts__text-content {
+  position: relative;
+  margin-bottom: 74px;
+  display: flex;
+  justify-content: space-between;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    @include vp-1199 {
+      bottom: -27px;
+    }
+
+    @include vp-767 {
+      bottom: -23px;
+    }
+  }
+
+  h2 {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -1.6px;
+
+    @include vp-1199 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 34px;
+      line-height: 50px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  dl {
+    margin: 0;
+    max-width: 604px;
+    display: grid;
+    grid-template-columns: 2.25fr 1.2fr 0.5fr;
+    justify-content: space-between;
+    gap: 25px;
+
+    @include vp-1199 {
+      max-width: 100%;
+      width: 100%;
+      gap: 65px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+
+  dt {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  dd {
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+
+    @include vp-1199 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @include vp-1199 {
+    margin-bottom: 58px;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 29px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 54px;
+  }
+}
+
+.contacts__details-link {
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.contacts__details-group {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @include vp-1199 {
+    gap: 17px;
+  }
+
+  @include vp-767 {
+    gap: 8px;
+  }
+}

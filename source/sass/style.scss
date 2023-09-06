@@ -3,6 +3,7 @@
 
 @import "vendor/normalize";
 @import "vendor/swiper";
+@import "vendor/leaflet";
 @import "vendor/accordion";
 
 // Global
@@ -37,6 +38,8 @@
 @import "blocks/faq";
 @import "blocks/reviews";
 @import "blocks/review";
+@import "blocks/contacts";
+@import "blocks/map";
 @import "blocks/footer";
 @import "blocks/social";
 
