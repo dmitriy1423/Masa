@@ -206,7 +206,7 @@
               <p>
                 Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на&nbsp;ранних и&nbsp;средних стадиях карьеры, предоставляя им&nbsp;инструменты для решения сложных проблем, с&nbsp;которыми сталкиваются Израиль и&nbsp;еврейские общины во&nbsp;всем мире. Цель центра&nbsp;&mdash; наделить этих людей способностью инициировать значимые изменения.
               </p>
-              <button class="about__button btn" type="button">
+              <button class="about__button btn" type="button" data-open-modal="feedback">
                 Подробнее о проекте
               </button>
             </div>
@@ -917,6 +917,67 @@
             </div>
           </div>
         </section>
+        <section class="feedback">
+          <div class="container">
+            <div class="feedback__wrapper">
+              <div class="feedback__content form">
+                <h2>
+                  Напишите нам
+                </h2>
+                <p>
+                  Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них ответим!
+                </p>
+                <div class="form__inner-wrapper" data-form-validate data-callback="base">
+                  <form method="post" action="https://echo.htmlacademy.ru/">
+                    <div class="form__field" data-on-input-validate data-required data-validate-type="text" data-limitation="name">
+                      <label>
+                        <input type="text" name="name" required>
+                        <span>Имя</span>
+                      </label>
+                    </div>
+                    <div class="form__field" data-on-input-validate data-required data-validate-type="phone">
+                      <label>
+                        <input type="tel" name="telephone" required>
+                        <span>Телефон</span>
+                      </label>
+                    </div>
+                    <div class="form__field" data-on-input-validate data-required data-validate-type="text">
+                      <label>
+                        <textarea name="message" required></textarea>
+                        <span>Ваше сообщение</span>
+                      </label>
+                    </div>
+                    <div class="form__field">
+                      <label>
+                        <div class="custom-select" data-select data-required="true">
+                          <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                            <span class="custom-select__text"></span>
+                            <span class="custom-select__icon"></span>
+                          </button>
+                          <span class="custom-select__label">Выберите город</span>
+                          <ul class="custom-select__list">
+                            <li class="custom-select__item" tabindex="0" data-select-value="id-1">Санкт-Петербург</li>
+                            <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
+                            <li class="custom-select__item" tabindex="0" data-select-value="id-3">Санкт-Петербург</li>
+                          </ul>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form__field form__field--checkbox">
+                      <input type="checkbox" id="is-consent" name="is-consent">
+                      <label for="is-consent">
+                        Я согласен на обработку моих персональных данных
+                      </label>
+                    </div>
+                    <button class="form__button btn btn--dark-background" type="submit">
+                      Отправить
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container">
@@ -991,33 +1052,63 @@
     </div>
 
     <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal></button>
+          <div class="modal__form form form--modal">
+            <h2>
+              Напишите нам
+            </h2>
+            <p>
+              Оставьте ваши контакты, если у&nbsp;вас остались вопросы&nbsp;&mdash; мы&nbsp;на&nbsp;них ответим!
+            </p>
+            <div class="form__inner-wrapper" data-form-validate data-callback="base">
+              <form method="post" action="https://echo.htmlacademy.ru/">
+                <div class="form__field" data-on-input-validate data-required data-validate-type="text" data-limitation="name">
+                  <label>
+                    <input type="text" name="name" required>
+                    <span>Имя</span>
+                  </label>
+                </div>
+                <div class="form__field" data-on-input-validate data-required data-validate-type="phone">
+                  <label>
+                    <input type="tel" name="telephone" required>
+                    <span>Телефон</span>
+                  </label>
+                </div>
+                <div class="form__field">
+                  <label>
+                    <div class="custom-select" data-select data-required="true">
+                      <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                        <span class="custom-select__text"></span>
+                        <span class="custom-select__icon"></span>
+                      </button>
+                      <span class="custom-select__label">Выберите город</span>
+                      <ul class="custom-select__list">
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-1">Санкт-Петербург</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
+                        <li class="custom-select__item" tabindex="0" data-select-value="id-3">Санкт-Петербург</li>
+                      </ul>
+                    </div>
+                  </label>
+                </div>
+                <div class="form__field form__field--checkbox">
+                  <input type="checkbox" id="is-consent-modal" name="is-consent">
+                  <label for="is-consent-modal">
+                    Я согласен на обработку моих персональных данных
+                  </label>
+                </div>
+                <button class="form__button btn" type="submit">
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-    </div> -->
-
-    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
+    </div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

@@ -81,14 +81,14 @@
 
     .faq__accordion-icon {
       border: 1px solid $color-btn-active;
-      background-color: $color-icon-light;
+      background-color: $color-btn-active;
 
       &::before {
-        background-color: $color-btn-active;
+        background-color: $color-icon-light;
       }
 
       &::after {
-        background-color: $color-btn-active;
+        background-color: $color-icon-light;
       }
     }
   }

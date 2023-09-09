@@ -97,6 +97,15 @@
   }
 }
 
+/* .news__slider {
+  height: fit-content;
+}
+
+.news__slider-wrapper {
+  display: grid;
+  grid-template-rows: 330px 240px;
+} */
+
 .news__slider-controls {
   position: relative;
   margin-top: 40px;
@@ -129,6 +138,13 @@
     &-active {
       color: $color-default-white;
       background-color: $color-background-blue;
+    }
+
+    @include vp-767 {
+      width: 26px;
+      height: 26px;
+      font-size: 14px;
+      line-height: 14px;
     }
   }
 }

@@ -4,10 +4,18 @@ function initSliders() {
   const heroSlider = new Swiper('.hero__slider', {
     direction: 'horizontal',
     loop: true,
-    allowTouchMouse: false,
+    allowTouchMove: false,
     /* autoplay: {
       delay: 3000,
     }, */
+    breakpoints: {
+      0: {
+        allowTouchMove: true,
+      },
+      768: {
+        allowTouchMove: false,
+      },
+    },
     pagination: {
       el: '.hero__slider-pagination',
       clickable: true,
@@ -17,20 +25,21 @@ function initSliders() {
   const programsSlider = new Swiper('.programs__slider', {
     direction: 'horizontal',
     loop: false,
-    allowTouchMouse: false,
+    allowTouchMove: false,
     slidesPerView: 3,
     spaceBetween: 32,
     breakpoints: {
       0: {
-        allowTouchMouse: true,
+        allowTouchMove: true,
         slidesPerView: 1,
       },
       768: {
-        allowTouchMouse: false,
+        allowTouchMove: false,
         slidesPerView: 2.13,
         spaceBetween: 30,
       },
       1200: {
+        allowTouchMove: false,
         slidesPerView: 3,
         spaceBetween: 32,
       },
@@ -47,11 +56,12 @@ function initSliders() {
   const newsSlider = new Swiper('.news__slider', {
     direction: 'horizontal',
     loop: false,
-    allowTouchMouse: false,
+    allowTouchMove: false,
     slidesPerView: 'auto',
     spaceBetween: 32,
     breakpoints: {
       320: {
+        allowTouchMove: true,
         slidesPerView: 1,
         grid: {
           rows: 2,
@@ -60,6 +70,7 @@ function initSliders() {
         spaceBetween: 20,
       },
       768: {
+        allowTouchMove: false,
         slidesPerView: 2,
         grid: {
           rows: 2,
@@ -93,16 +104,16 @@ function initSliders() {
   const reviewsSlider = new Swiper('.reviews__slider', {
     direction: 'horizontal',
     loop: false,
-    allowTouchMouse: false,
+    allowTouchMove: false,
     slidesPerView: 2,
     spaceBetween: 32,
     breakpoints: {
       0: {
-        allowTouchMouse: true,
+        allowTouchMove: true,
         slidesPerView: 1,
       },
       768: {
-        allowTouchMouse: false,
+        allowTouchMove: false,
         slidesPerView: 1.28,
         spaceBetween: 30,
       },

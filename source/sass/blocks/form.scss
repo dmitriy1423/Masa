@@ -1,0 +1,489 @@
+.form {
+  color: $color-default-white;
+  background-color: $color-background-blue;
+  border-radius: 16px;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -1px;
+
+    @include vp-1199 {
+      margin-bottom: 27px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.6px;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    opacity: 0.9;
+
+    @include vp-1199 {
+      margin-bottom: 33px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 26px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  label {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 7px;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(240, 239, 233, 0.8);
+
+    @include vp-767 {
+      gap: 11px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  input {
+    position: relative;
+    width: 100%;
+    padding: 13px 25px;
+    font: inherit;
+    font-size: 14px;
+    line-height: 14px;
+    color: $color-additional-white;
+    background-color: transparent;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &:not(:disabled):hover,
+    &:not(:disabled):focus,
+    &:not(:disabled):active {
+      border: 1px solid rgba(255, 255, 255, 1);
+
+      + span {
+        color: $color-additional-white;
+      }
+    }
+
+    &:disabled {
+      border: 1px solid rgba(255, 255, 255, 1);
+      background-color: rgba(255, 255, 255, 0.2);
+      opacity: 0.4;
+
+      + span {
+        color: rgba(240, 239, 233, 0.6);
+      }
+    }
+  }
+
+  textarea {
+    position: relative;
+    width: 100%;
+    min-height: 98px;
+    padding: 16px 25px;
+    font: inherit;
+    font-size: 14px;
+    line-height: 14px;
+    color: $color-additional-white;
+    background-color: transparent;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &:not(:disabled):hover,
+    &:not(:disabled):focus,
+    &:not(:disabled):active {
+      border: 1px solid rgba(255, 255, 255, 1);
+
+      + span {
+        color: $color-additional-white;
+      }
+    }
+
+    &:disabled {
+      border: 1px solid rgba(255, 255, 255, 1);
+      background-color: rgba(255, 255, 255, 0.2);
+      opacity: 0.4;
+
+      + span {
+        color: rgba(240, 239, 233, 0.6);
+      }
+    }
+
+    &[aria-invalid="true"],
+    &[aria-invalid="true"]:hover,
+    &[aria-invalid="true"]:focus {
+      border: 1px solid $color-form-error;
+      background-color: rgba(255, 94, 102, 0.2);
+
+      + span {
+        color: rgba(240, 239, 233, 0.6);
+      }
+    }
+
+    @include vp-767 {
+      min-height: 94px;
+    }
+  }
+
+  &--modal {
+    color: $color-default-black;
+    background-color: $color-background-additional;
+
+    h2 {
+      margin-bottom: 7px;
+      color: $color-additional;
+      text-align: center;
+
+      @include vp-1199 {
+        margin-bottom: 13px;
+      }
+
+      @include vp-767 {
+        margin-bottom: 5px;
+      }
+    }
+
+    p {
+      text-align: center;
+
+      @include vp-1199 {
+        margin-bottom: 22px;
+      }
+
+      @include vp-767 {
+        padding: 0 30px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .form__inner-wrapper form {
+      @include vp-767 {
+        gap: 16px;
+      }
+    }
+
+    label {
+      color: rgba(72, 72, 72, 0.8);
+
+      @include vp-767 {
+        gap: 9px;
+      }
+    }
+
+    input {
+      border: 1px solid rgba(72, 72, 72, 0.3);
+      color: $color-default-black;
+
+      &:not(:disabled):hover,
+      &:not(:disabled):focus,
+      &:not(:disabled):active {
+        border: 1px solid rgba(72, 72, 72, 1);
+
+        + span {
+          color: $color-default-black;
+        }
+      }
+
+      &:disabled {
+        border: 1px solid rgba(169, 175, 183, 0.5);
+        background-color: rgba(169, 175, 183, 0.2);
+
+        + span {
+          color: rgba(169, 175, 183, 0.6);
+        }
+      }
+    }
+
+    textarea {
+      border: 1px solid rgba(72, 72, 72, 0.3);
+      color: $color-default-black;
+
+      &:not(:disabled):hover,
+      &:not(:disabled):focus,
+      &:not(:disabled):active {
+        border: 1px solid rgba(72, 72, 72, 1);
+
+        + span {
+          color: $color-default-black;
+        }
+      }
+
+      &:disabled {
+        border: 1px solid rgba(169, 175, 183, 0.5);
+        background-color: rgba(169, 175, 183, 0.2);
+
+        + span {
+          color: rgba(169, 175, 183, 0.6);
+        }
+      }
+    }
+
+    .custom-select {
+      padding: 24px 0 15px;
+
+      @include vp-767 {
+        padding: 22px 0 15px;
+      }
+    }
+
+    .custom-select__button {
+      border: 1px solid rgba(72, 72, 72, 0.3);
+
+      &:hover {
+        border: 1px solid rgba(72, 72, 72, 1);
+
+        + .custom-select__label {
+          color: $color-default-black;
+        }
+      }
+
+      &:focus {
+        border: 1px solid rgba(72, 72, 72, 1);
+
+        + .custom-select__label {
+          color: $color-default-black;
+        }
+      }
+
+      @include vp-767 {
+        padding: 13px 20px;
+      }
+    }
+
+    .custom-select__list {
+      border: 1px solid $color-default-black;
+    }
+
+    .custom-select__icon {
+      background-color: $color-default-black;
+    }
+
+    .custom-select__label {
+      top: 0;
+    }
+
+    .custom-select__text {
+      color: $color-default-black;
+    }
+
+    .form__field.is-invalid {
+      span,
+      input:hover + span,
+      input:focus + span {
+        color: $color-default-black;
+      }
+    }
+
+    .form__field--checkbox {
+      label {
+        margin-bottom: 14px;
+        color: rgba(72, 72, 72, 0.9);
+
+        &::before {
+          border: 1px solid rgba(49, 109, 194, 0.7);
+        }
+
+        @include vp-767 {
+          margin-bottom: 9px;
+        }
+      }
+
+      input[type="checkbox"] {
+        &:not(:disabled):not(:checked) + label:hover::before,
+        &:not(:disabled):not(:checked) + label:focus::before {
+          border: 1px solid rgba(49, 109, 194, 1);
+        }
+
+        &:checked + label::before {
+          background-color: $color-icon-default;
+        }
+
+        &:checked + label::after {
+          content: "";
+          background-color: $color-icon-light;
+        }
+
+        &:checked + label:hover::before {
+          background-color: transparent;
+        }
+
+        &:checked + label:hover::after {
+          background-color: $color-icon-default;
+        }
+
+        &:disabled + label::before {
+          border: 1px solid rgba(49, 109, 194, 1);
+          background-color: rgba(49, 109, 194, 0.6);
+        }
+
+        &:disabled + label::after {
+          content: none;
+        }
+
+        &:disabled:checked + label::before {
+          border: 1px solid $color-form-disabled;
+          background-color: $color-form-disabled;
+        }
+
+        &:disabled:checked + label::after {
+          content: "";
+          background-color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+
+    .form__button {
+      align-self: center;
+
+      @include vp-767 {
+        align-self: stretch;
+      }
+    }
+  }
+}
+
+.form__inner-wrapper {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include vp-767 {
+      gap: 20px;
+    }
+  }
+}
+
+.form__field {
+  &.is-invalid {
+    input,
+    input:hover,
+    input:focus {
+      border: 1px solid $color-form-error;
+      background-color: rgba(255, 94, 102, 0.2);
+
+      + span {
+        color: rgba(240, 239, 233, 0.6);
+      }
+    }
+  }
+
+  &--checkbox {
+    label {
+      margin-top: -12px;
+      margin-bottom: 23px;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: -0.3px;
+      color: rgba(255, 255, 255, 0.9);
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+      }
+
+      &::after {
+        position: absolute;
+        content: none;
+        top: 50%;
+        left: 5px;
+        transform: translate(0, -50%);
+        width: 10px;
+        height: 10px;
+        background-color: $color-icon-default;
+        mask-image: url("../../img/sprite/icon-checkbox.svg");
+        mask-size: 10px 10px;
+      }
+
+      @include vp-767 {
+        margin-top: -16px;
+        margin-bottom: 9px;
+        display: grid;
+        grid-template-columns: 20px auto;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    input[type="checkbox"] {
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      position: absolute;
+
+      &:not(:disabled):not(:checked) + label:hover,
+      &:not(:disabled):not(:checked) + label:focus {
+        &::before {
+          border: 1px solid rgba(255, 255, 255, 1);
+        }
+      }
+
+      &:checked + label::before {
+        background-color: $color-icon-light;
+      }
+
+      &:checked + label::after {
+        content: "";
+      }
+
+      &:checked + label:hover::before {
+        background-color: transparent;
+      }
+
+      &:checked + label:hover::after {
+        background-color: $color-icon-light;
+      }
+
+      &:disabled + label {
+        pointer-events: none;
+      }
+
+      &:disabled + label::before {
+        border: 1px solid rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:disabled + label::after {
+        content: none;
+      }
+
+      &:disabled:checked + label::before {
+        border: 1px solid $color-form-disabled;
+        background-color: $color-form-disabled;
+      }
+
+      &:disabled:checked + label::after {
+        content: "";
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
