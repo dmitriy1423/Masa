@@ -1,20 +1,11 @@
 .features {
   background-color: $color-background-default;
-
-  /* .container {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    background-color: $color-background-blue;
-  } */
 }
 
 .features__list {
   margin: 0;
   padding: 89px 106px 53px 126px;
   list-style: none;
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 52px; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 54px 52px;

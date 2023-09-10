@@ -139,8 +139,9 @@
   &--no-text {
     grid-template-columns: auto;
     padding: 0;
-    width: 30px;
-    height: 30px;
+    width: 29px;
+    height: 29px;
+    border: 1px solid $color-btn-default;
     gap: 0;
     background-color: $color-btn-default;
 
@@ -155,11 +156,36 @@
     &::after {
       content: none;
     }
+
+    &:hover:not(:disabled):not([aria-disabled="true"]),
+    &:focus:not(:disabled):not([aria-disabled="true"]) {
+      border: 1px solid $color-btn-white;
+      background-color: $color-btn-white;
+
+      &::before {
+        right: 10px;
+      }
+    }
+
+    &:active:not(:disabled):not([aria-disabled="true"]) {
+      &::before {
+        background-color: rgba(49, 109, 194, 0.7);
+      }
+    }
+
+    &:disabled,
+    &[aria-disabled="true"] {
+      border: 1px solid $color-btn-disabled;
+      background-color: $color-btn-disabled;
+
+      &::before {
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+    }
   }
 
   @include vp-1199 {
     max-width: 100%;
-    /* grid-template-columns: auto 34px; */
   }
 
   @include vp-767 {

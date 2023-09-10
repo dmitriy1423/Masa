@@ -19,12 +19,12 @@
   position: relative;
   z-index: 1;
   border-radius: 16px;
-  background-image: image-set("../img/form-background-desktop@1x.jpg" 1x, "../img/form-background-desktop@2x.jpg" 2x);
+  background-image: image-set("../img/form-background-desktop@1x.webp" 1x, "../img/form-background-desktop@2x.webp" 2x, "../img/form-background-desktop@1x.jpg" 1x, "../img/form-background-desktop@2x.jpg" 2x);
   background-repeat: no-repeat;
   background-size: cover;
 
   @include vp-1199 {
-    background-image: image-set("../img/form-background-tablet@1x.jpg" 1x, "../img/form-background-tablet@2x.jpg" 2x);
+    background-image: image-set("../img/form-background-tablet@1x.webp" 1x, "../img/form-background-tablet@2x.webp" 2x, "../img/form-background-tablet@1x.jpg" 1x, "../img/form-background-tablet@2x.jpg" 2x);
   }
 
   @include vp-767 {

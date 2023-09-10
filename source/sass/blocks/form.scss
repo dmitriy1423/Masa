@@ -281,6 +281,7 @@
 
     .custom-select__label {
       top: 0;
+      color: rgba(72, 72, 72, 0.8);
     }
 
     .custom-select__text {
@@ -311,7 +312,8 @@
 
       input[type="checkbox"] {
         &:not(:disabled):not(:checked) + label:hover::before,
-        &:not(:disabled):not(:checked) + label:focus::before {
+        &:focus:not(:disabled):not(:checked) + label::before,
+        &:focus-visible:not(:disabled):not(:checked) + label::before {
           border: 1px solid rgba(49, 109, 194, 1);
         }
 
@@ -324,10 +326,14 @@
           background-color: $color-icon-light;
         }
 
+        &:checked:focus:not(:disabled) + label::before,
+        &:checked:focus-visible:not(:disabled) + label::before,
         &:checked + label:hover::before {
           background-color: transparent;
         }
 
+        &:checked:focus:not(:disabled) + label::after,
+        &:checked:focus-visible:not(:disabled) + label::after,
         &:checked + label:hover::after {
           background-color: $color-icon-default;
         }
@@ -419,7 +425,7 @@
         width: 10px;
         height: 10px;
         background-color: $color-icon-default;
-        mask-image: url("../../img/sprite/icon-checkbox.svg");
+        mask-image: url("../img/sprite/icon-checkbox.svg");
         mask-size: 10px 10px;
       }
 
@@ -439,8 +445,14 @@
       opacity: 0;
       position: absolute;
 
-      &:not(:disabled):not(:checked) + label:hover,
-      &:not(:disabled):not(:checked) + label:focus {
+      &:not(:disabled):not(:checked) + label:hover {
+        &::before {
+          border: 1px solid rgba(255, 255, 255, 1);
+        }
+      }
+
+      &:focus:not(:disabled):not(:checked) + label,
+      &:focus-visible:not(:disabled):not(:checked) + label {
         &::before {
           border: 1px solid rgba(255, 255, 255, 1);
         }
@@ -460,6 +472,17 @@
 
       &:checked + label:hover::after {
         background-color: $color-icon-light;
+      }
+
+      &:checked:focus:not(:disabled) + label,
+      &:checked:focus-visible:not(:disabled) + label {
+        &::before {
+          background-color: transparent;
+        }
+
+        &::after {
+          background-color: $color-icon-light;
+        }
       }
 
       &:disabled + label {

@@ -115,6 +115,11 @@
 
 .header__link {
   color: rgba(255, 255, 255, 0.7);
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 1);
+  }
 }
 
 .header__details {
@@ -134,6 +139,15 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 1);
+
+      &::after {
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
 
     &::after {
       content: "";

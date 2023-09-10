@@ -26,7 +26,7 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#about">
                   О проекте
                 </a>
               </li>
@@ -52,12 +52,12 @@
                 </details>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#details">
                   Как поехать
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#reviews">
                   Отзывы
                 </a>
               </li>
@@ -83,7 +83,7 @@
                 </details>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#contacts">
                   Контакты
                 </a>
               </li>
@@ -101,6 +101,9 @@
           <div class="swiper-wrapper hero__slider-wrapper">
             <div class="swiper-slide hero__slider-item">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/hero-photo-1-mobile@1x.webp 1x, img/hero-photo-1-mobile@2x.webp 2x" width="320" height="289">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-photo-1-tablet@1x.webp 1x, img/hero-photo-1-tablet@2x.webp 2x" width="768" height="1024">
+                <source type="image/webp" srcset="img/hero-photo-1-desktop@1x.webp 1x, img/hero-photo-1-desktop@2x.webp 2x" width="1440" height="800">
                 <source media="(max-width: 767px)" srcset="img/hero-photo-1-mobile@1x.jpg 1x, img/hero-photo-1-mobile@2x.jpg 2x" width="320" height="289">
                 <source media="(max-width: 1199px)" srcset="img/hero-photo-1-tablet@1x.jpg 1x, img/hero-photo-1-tablet@2x.jpg 2x" width="768" height="1024">
                 <img src="img/hero-photo-1-desktop@1x.jpg" srcset="img/hero-photo-1-desktop@1x.jpg 1x, img/hero-photo-1-desktop@2x.jpg 2x" width="1440" height="800" alt="Стажировки в компаниях Израиля.">
@@ -128,6 +131,9 @@
             </div>
             <div class="swiper-slide hero__slider-item">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/hero-photo-2-mobile@1x.webp 1x, img/hero-photo-2-mobile@2x.webp 2x" width="320" height="289">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-photo-2-tablet@1x.webp 1x, img/hero-photo-2-tablet@2x.webp 2x" width="768" height="1024">
+                <source type="image/webp" srcset="img/hero-photo-2-desktop@1x.webp 1x, img/hero-photo-2-desktop@2x.webp 2x" width="1440" height="800">
                 <source media="(max-width: 767px)" srcset="img/hero-photo-2-mobile@1x.jpg 1x, img/hero-photo-2-mobile@2x.jpg 2x" width="320" height="289">
                 <source media="(max-width: 1199px)" srcset="img/hero-photo-2-tablet@1x.jpg 1x, img/hero-photo-2-tablet@2x.jpg 2x" width="768" height="1024">
                 <img src="img/hero-photo-2-desktop@1x.jpg" srcset="img/hero-photo-2-desktop@1x.jpg 1x, img/hero-photo-2-desktop@2x.jpg 2x" width="1440" height="800" alt="Волонтёрские программы.">
@@ -155,6 +161,9 @@
             </div>
             <div class="swiper-slide hero__slider-item">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/hero-photo-3-mobile@1x.webp 1x, img/hero-photo-3-mobile@2x.webp 2x" width="320" height="289">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-photo-3-tablet@1x.webp 1x, img/hero-photo-3-tablet@2x.webp 2x" width="768" height="1024">
+                <source type="image/webp" srcset="img/hero-photo-3-desktop@1x.webp 1x, img/hero-photo-3-desktop@2x.webp 2x" width="1440" height="800">
                 <source media="(max-width: 767px)" srcset="img/hero-photo-3-mobile@1x.jpg 1x, img/hero-photo-3-mobile@2x.jpg 2x" width="320" height="289">
                 <source media="(max-width: 1199px)" srcset="img/hero-photo-3-tablet@1x.jpg 1x, img/hero-photo-3-tablet@2x.jpg 2x" width="768" height="1024">
                 <img src="img/hero-photo-3-desktop@1x.jpg" srcset="img/hero-photo-3-desktop@1x.jpg 1x, img/hero-photo-3-desktop@2x.jpg 2x" width="1440" height="800" alt="Опыт за рубежом.">
@@ -189,7 +198,7 @@
         </div>
       </section>
       <main>
-        <section class="about">
+        <section class="about" id="about">
           <div class="container">
             <div class="about__text-content">
               <h2>
@@ -212,7 +221,7 @@
             </div>
           </div>
         </section>
-        <section class="features">
+        <section class="features" id="features">
           <div class="container">
             <h2 class="visually-hidden">
               Наши преимущества.
@@ -253,7 +262,7 @@
             </ul>
           </div>
         </section>
-        <section class="programs">
+        <section class="programs" id="programs">
           <div class="container">
             <h2>
               Программы
@@ -265,6 +274,9 @@
               <div class="programs__slider-wrapper swiper-wrapper">
                 <div class="programs__slide program swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.webp 1x, img/program-photo-1-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.webp 1x, img/program-photo-1-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/program-photo-1-desktop@1x.webp 1x, img/program-photo-1-desktop@2x.webp 2x" width="392" height="420">
                     <source media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.jpg 1x, img/program-photo-1-mobile@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.jpg 1x, img/program-photo-1-tablet@2x.jpg 2x" width="324" height="420">
                     <img src="img/program-photo-1-desktop@1x.jpg" srcset="img/program-photo-1-desktop@1x.jpg 1x, img/program-photo-1-desktop@2x.jpg 2x" width="392" height="420" alt="Получение стажировок.">
@@ -286,6 +298,9 @@
                 </div>
                 <div class="programs__slide program swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-2-mobile@1x.webp 1x, img/program-photo-2-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/program-photo-2-tablet@1x.webp 1x, img/program-photo-2-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/program-photo-2-desktop@1x.webp 1x, img/program-photo-2-desktop@2x.webp 2x" width="392" height="420">
                     <source media="(max-width: 767px)" srcset="img/program-photo-2-mobile@1x.jpg 1x, img/program-photo-2-mobile@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1199px)" srcset="img/program-photo-2-tablet@1x.jpg 1x, img/program-photo-2-tablet@2x.jpg 2x" width="324" height="420">
                     <img src="img/program-photo-2-desktop@1x.jpg" srcset="img/program-photo-2-desktop@1x.jpg 1x, img/program-photo-2-desktop@2x.jpg 2x" width="392" height="420" alt="Волонтерство.">
@@ -307,6 +322,9 @@
                 </div>
                 <div class="programs__slide program swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-3-mobile@1x.webp 1x, img/program-photo-3-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/program-photo-3-tablet@1x.webp 1x, img/program-photo-3-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/program-photo-3-desktop@1x.webp 1x, img/program-photo-3-desktop@2x.webp 2x" width="392" height="420">
                     <source media="(max-width: 767px)" srcset="img/program-photo-3-mobile@1x.jpg 1x, img/program-photo-3-mobile@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1199px)" srcset="img/program-photo-3-tablet@1x.jpg 1x, img/program-photo-3-tablet@2x.jpg 2x" width="324" height="420">
                     <img src="img/program-photo-3-desktop@1x.jpg" srcset="img/program-photo-3-desktop@1x.jpg 1x, img/program-photo-3-desktop@2x.jpg 2x" width="392" height="420" alt="Получение образования.">
@@ -328,6 +346,9 @@
                 </div>
                 <div class="programs__slide program swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.webp 1x, img/program-photo-1-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.webp 1x, img/program-photo-1-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/program-photo-1-desktop@1x.webp 1x, img/program-photo-1-desktop@2x.webp 2x" width="392" height="420">
                     <source media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.jpg 1x, img/program-photo-1-mobile@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.jpg 1x, img/program-photo-1-tablet@2x.jpg 2x" width="324" height="420">
                     <img src="img/program-photo-1-desktop@1x.jpg" srcset="img/program-photo-1-desktop@1x.jpg 1x, img/program-photo-1-desktop@2x.jpg 2x" width="392" height="420" alt="Получение стажировок.">
@@ -349,6 +370,9 @@
                 </div>
                 <div class="programs__slide program swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.webp 1x, img/program-photo-1-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.webp 1x, img/program-photo-1-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/program-photo-1-desktop@1x.webp 1x, img/program-photo-1-desktop@2x.webp 2x" width="392" height="420">
                     <source media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.jpg 1x, img/program-photo-1-mobile@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.jpg 1x, img/program-photo-1-tablet@2x.jpg 2x" width="324" height="420">
                     <img src="img/program-photo-1-desktop@1x.jpg" srcset="img/program-photo-1-desktop@1x.jpg 1x, img/program-photo-1-desktop@2x.jpg 2x" width="392" height="420" alt="Получение стажировок.">
@@ -370,6 +394,9 @@
                 </div>
                 <div class="programs__slide program swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.webp 1x, img/program-photo-1-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.webp 1x, img/program-photo-1-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/program-photo-1-desktop@1x.webp 1x, img/program-photo-1-desktop@2x.webp 2x" width="392" height="420">
                     <source media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.jpg 1x, img/program-photo-1-mobile@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.jpg 1x, img/program-photo-1-tablet@2x.jpg 2x" width="324" height="420">
                     <img src="img/program-photo-1-desktop@1x.jpg" srcset="img/program-photo-1-desktop@1x.jpg 1x, img/program-photo-1-desktop@2x.jpg 2x" width="392" height="420" alt="Получение стажировок.">
@@ -391,6 +418,9 @@
                 </div>
                 <div class="programs__slide program swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.webp 1x, img/program-photo-1-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.webp 1x, img/program-photo-1-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/program-photo-1-desktop@1x.webp 1x, img/program-photo-1-desktop@2x.webp 2x" width="392" height="420">
                     <source media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.jpg 1x, img/program-photo-1-mobile@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.jpg 1x, img/program-photo-1-tablet@2x.jpg 2x" width="324" height="420">
                     <img src="img/program-photo-1-desktop@1x.jpg" srcset="img/program-photo-1-desktop@1x.jpg 1x, img/program-photo-1-desktop@2x.jpg 2x" width="392" height="420" alt="Получение стажировок.">
@@ -412,6 +442,9 @@
                 </div>
                 <div class="programs__slide program swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.webp 1x, img/program-photo-1-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.webp 1x, img/program-photo-1-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/program-photo-1-desktop@1x.webp 1x, img/program-photo-1-desktop@2x.webp 2x" width="392" height="420">
                     <source media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.jpg 1x, img/program-photo-1-mobile@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.jpg 1x, img/program-photo-1-tablet@2x.jpg 2x" width="324" height="420">
                     <img src="img/program-photo-1-desktop@1x.jpg" srcset="img/program-photo-1-desktop@1x.jpg 1x, img/program-photo-1-desktop@2x.jpg 2x" width="392" height="420" alt="Получение стажировок.">
@@ -433,6 +466,9 @@
                 </div>
                 <div class="programs__slide program swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.webp 1x, img/program-photo-1-mobile@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.webp 1x, img/program-photo-1-tablet@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/program-photo-1-desktop@1x.webp 1x, img/program-photo-1-desktop@2x.webp 2x" width="392" height="420">
                     <source media="(max-width: 767px)" srcset="img/program-photo-1-mobile@1x.jpg 1x, img/program-photo-1-mobile@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1199px)" srcset="img/program-photo-1-tablet@1x.jpg 1x, img/program-photo-1-tablet@2x.jpg 2x" width="324" height="420">
                     <img src="img/program-photo-1-desktop@1x.jpg" srcset="img/program-photo-1-desktop@1x.jpg 1x, img/program-photo-1-desktop@2x.jpg 2x" width="392" height="420" alt="Получение стажировок.">
@@ -471,7 +507,7 @@
             </div>
           </div>
         </section>
-        <section class="details">
+        <section class="details" id="details">
           <div class="container">
             <div class="details__info">
               <h2>
@@ -481,6 +517,9 @@
                 Свяжитесь с&nbsp;координатором, чтобы узнать полную информацию. Вы&nbsp;получите актуальные сведения о&nbsp;доступных программах и&nbsp;городах, в&nbsp;которых можете пройти программу.
               </p>
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/details-photo-mobile@1x.webp 1x, img/details-photo-mobile@2x.webp 2x" width="290" height="200">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/details-photo-tablet@1x.webp 1x, img/details-photo-tablet@2x.webp 2x" width="678" height="375">
+                <source type="image/webp" srcset="img/details-photo-desktop@1x.webp 1x, img/details-photo-desktop@2x.webp 2x" width="498" height="363">
                 <source media="(max-width: 767px)" srcset="img/details-photo-mobile@1x.jpg 1x, img/details-photo-mobile@2x.jpg 2x" width="290" height="200">
                 <source media="(max-width: 1199px)" srcset="img/details-photo-tablet@1x.jpg 1x, img/details-photo-tablet@2x.jpg 2x" width="678" height="375">
                 <img src="img/details-photo-desktop@1x.jpg" srcset="img/details-photo-desktop@1x.jpg 1x, img/details-photo-desktop@2x.jpg 2x" width="498" height="363" alt="Как проехать ?">
@@ -515,7 +554,7 @@
             </div>
           </div>
         </section>
-        <section class="news">
+        <section class="news" id="news">
           <div class="container">
             <h2>
               Новости и материалы
@@ -541,6 +580,9 @@
               <div class="news__slider-wrapper swiper-wrapper">
                 <div class="news__slide news-card news-card--practice swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/news-card-photo-1-mobile@1x.webp 1x, img/news-card-photo-1-mobile@2x.webp 2x" width="290" height="330">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/news-card-photo-1-tablet@1x.webp 1x, img/news-card-photo-1-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-card-photo-1-desktop@1x.webp 1x, img/news-card-photo-1-desktop@2x.webp 2x" width="604" height="400">
                     <source media="(max-width: 767px)" srcset="img/news-card-photo-1-mobile@1x.jpg 1x, img/news-card-photo-1-mobile@2x.jpg 2x" width="290" height="330">
                     <source media="(max-width: 1199px)" srcset="img/news-card-photo-1-tablet@1x.jpg 1x, img/news-card-photo-1-tablet@2x.jpg 2x" width="324" height="350">
                     <img src="img/news-card-photo-1-desktop@1x.jpg" srcset="img/news-card-photo-1-desktop@1x.jpg 1x, img/news-card-photo-1-desktop@2x.jpg 2x" width="604" height="400" alt="Интервью с участницей программы стажировки.">
@@ -564,6 +606,9 @@
                 </div>
                 <div class="news__slide news-card news-card--travel swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/news-card-photo-2-mobile@1x.webp 1x, img/news-card-photo-2-mobile@2x.webp 2x" width="290" height="330">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/news-card-photo-2-tablet@1x.webp 1x, img/news-card-photo-2-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-card-photo-2-desktop@1x.webp 1x, img/news-card-photo-2-desktop@2x.webp 2x" width="604" height="400">
                     <source media="(max-width: 767px)" srcset="img/news-card-photo-2-mobile@1x.jpg 1x, img/news-card-photo-2-mobile@2x.jpg 2x" width="290" height="330">
                     <source media="(max-width: 1199px)" srcset="img/news-card-photo-2-tablet@1x.jpg 1x, img/news-card-photo-2-tablet@2x.jpg 2x" width="324" height="350">
                     <img src="img/news-card-photo-2-desktop@1x.jpg" srcset="img/news-card-photo-2-desktop@1x.jpg 1x, img/news-card-photo-2-desktop@2x.jpg 2x" width="604" height="400" alt="Путешествия по Израилю.">
@@ -587,6 +632,9 @@
                 </div>
                 <div class="news__slide news-card news-card--volunteering swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/news-card-photo-3-mobile@1x.webp 1x, img/news-card-photo-3-mobile@2x.webp 2x" width="290" height="330">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/news-card-photo-3-tablet@1x.webp 1x, img/news-card-photo-3-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-card-photo-3-desktop@1x.webp 1x, img/news-card-photo-3-desktop@2x.webp 2x" width="604" height="400">
                     <source media="(max-width: 767px)" srcset="img/news-card-photo-3-mobile@1x.jpg 1x, img/news-card-photo-3-mobile@2x.jpg 2x" width="290" height="330">
                     <source media="(max-width: 1199px)" srcset="img/news-card-photo-3-tablet@1x.jpg 1x, img/news-card-photo-3-tablet@2x.jpg 2x" width="324" height="350">
                     <img src="img/news-card-photo-3-desktop@1x.jpg" srcset="img/news-card-photo-3-desktop@1x.jpg 1x, img/news-card-photo-3-desktop@2x.jpg 2x" width="604" height="400" alt="Программа волонтерства.">
@@ -610,6 +658,9 @@
                 </div>
                 <div class="news__slide news-card news-card--career swiper-slide">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/news-card-photo-4-mobile@1x.webp 1x, img/news-card-photo-4-mobile@2x.webp 2x" width="290" height="330">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/news-card-photo-4-tablet@1x.webp 1x, img/news-card-photo-4-tablet@2x.webp 2x" width="324" height="350">
+                    <source type="image/webp" srcset="img/news-card-photo-4-desktop@1x.webp 1x, img/news-card-photo-4-desktop@2x.webp 2x" width="604" height="400">
                     <source media="(max-width: 767px)" srcset="img/news-card-photo-4-mobile@1x.jpg 1x, img/news-card-photo-4-mobile@2x.jpg 2x" width="290" height="330">
                     <source media="(max-width: 1199px)" srcset="img/news-card-photo-4-tablet@1x.jpg 1x, img/news-card-photo-4-tablet@2x.jpg 2x" width="324" height="350">
                     <img src="img/news-card-photo-4-desktop@1x.jpg" srcset="img/news-card-photo-4-desktop@1x.jpg 1x, img/news-card-photo-4-desktop@2x.jpg 2x" width="604" height="400" alt="Интервью с участницей программы стажировки.">
@@ -648,14 +699,14 @@
             </div>
           </div>
         </section>
-        <section class="faq">
+        <section class="faq" id="faq">
           <div class="container">
             <h2>
               Вопросы и ответы
             </h2>
             <div class="faq__accordion" data-accordion="parent">
               <div class="faq__accordion-element" data-accordion="element">
-                <button class="faq__accordion-button" type="button" data-accordion="button">
+                <div class="faq__accordion-button" data-accordion="button" tabindex="0">
                   <div class="faq__accordion-title">
                     <h3>
                       Кто организатор? Какие сроки у программы?
@@ -667,10 +718,10 @@
                       Организатором программы является проект &laquo;Маса&raquo; в&nbsp;сотрудничестве с&nbsp;образовательными учреждениями. Сроки программы обмена могут варьироваться от&nbsp;одного семестра до&nbsp;года.
                     </p>
                   </div>
-                </button>
+                </div>
               </div>
               <div class="faq__accordion-element" data-accordion="element">
-                <button class="faq__accordion-button" type="button" data-accordion="button">
+                <div class="faq__accordion-button" data-accordion="button" tabindex="0">
                   <div class="faq__accordion-title">
                     <h3>
                       Что такое грант на обучение?
@@ -682,10 +733,10 @@
                       Грант на&nbsp;обучение&nbsp;&mdash; это финансовая поддержка, которую предоставляет организатор программы обмена студентами для оплаты учебных расходов.
                     </p>
                   </div>
-                </button>
+                </div>
               </div>
               <div class="faq__accordion-element" data-accordion="element">
-                <button class="faq__accordion-button" type="button" data-accordion="button">
+                <div class="faq__accordion-button" data-accordion="button" tabindex="0">
                   <div class="faq__accordion-title">
                     <h3>
                       Как определяется стоимость программы?
@@ -697,10 +748,10 @@
                       Полная стоимость определяется организаторами в&nbsp;зависимости от&nbsp;направления. В&nbsp;большинстве случаев грант &laquo;Маса&raquo; не&nbsp;покрывает полную стоимость программы, и&nbsp;поэтому предусматривается определённая доля личного участия.
                     </p>
                   </div>
-                </button>
+                </div>
               </div>
               <div class="faq__accordion-element faq__accordion-element--alt-padding" data-accordion="element">
-                <button class="faq__accordion-button" type="button" data-accordion="button">
+                <div class="faq__accordion-button" data-accordion="button" tabindex="0">
                   <div class="faq__accordion-title">
                     <h3>
                       Признаётся ли учеба в рамках проекта для дальнейшего обучения?
@@ -712,10 +763,10 @@
                       Студенты, участвующие в&nbsp;проекте, могут использовать полученные знания и&nbsp;навыки в&nbsp;своей будущей профессиональной деятельности или продолжить обучение в&nbsp;высших учебных заведениях. Кроме того, многие университеты и&nbsp;колледжи предоставляют кредиты за&nbsp;участие в&nbsp;программе обмена студентами.
                     </p>
                   </div>
-                </button>
+                </div>
               </div>
               <div class="faq__accordion-element faq__accordion-element--alt-padding" data-accordion="element">
-                <button class="faq__accordion-button" type="button" data-accordion="button">
+                <div class="faq__accordion-button" data-accordion="button" tabindex="0">
                   <div class="faq__accordion-title">
                     <h3>
                       Как выглядит полный процесс регистрации на программу «Маса»?
@@ -727,12 +778,12 @@
                       Процесс регистрации на&nbsp;программу обмена включает выбор университета-партнера и&nbsp;программы обмена, общение с&nbsp;координатором программы, заполнение заявления и&nbsp;предоставление необходимых документов, прохождение интервью, оформление визы, жилья и&nbsp;страховки, обучение по&nbsp;безопасности за&nbsp;границей и&nbsp;подписание договора об&nbsp;участии в&nbsp;программе. Подробнее можно узнать позвонив в&nbsp;центр.
                     </p>
                   </div>
-                </button>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="container">
             <h2>
               Отзывы
@@ -742,6 +793,8 @@
                 <div class="reviews__slide review swiper-slide">
                   <div class="review__author">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/review-photo-1-mobile@1x.webp 1x, img/review-photo-1-mobile@2x.webp 2x" width="60" height="60">
+                      <source type="image/webp" srcset="img/review-photo-1-desktop@1x.webp 1x, img/review-photo-1-desktop@2x.webp 2x" width="90" height="90">
                       <source media="(max-width: 767px)" srcset="img/review-photo-1-mobile@1x.png 1x, img/review-photo-1-mobile@2x.png 2x" width="60" height="60">
                       <img src="img/review-photo-1-desktop@1x.png" srcset="img/review-photo-1-desktop@1x.png 1x, img/review-photo-1-desktop@2x.png 2x" width="90" height="90" alt="Сара Аврахам.">
                     </picture>
@@ -781,6 +834,8 @@
                 <div class="reviews__slide review swiper-slide">
                   <div class="review__author">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/review-photo-2-mobile@1x.webp 1x, img/review-photo-2-mobile@2x.webp 2x" width="60" height="60">
+                      <source type="image/webp" srcset="img/review-photo-2-desktop@1x.webp 1x, img/review-photo-2-desktop@2x.webp 2x" width="90" height="90">
                       <source media="(max-width: 767px)" srcset="img/review-photo-2-mobile@1x.png 1x, img/review-photo-2-mobile@2x.png 2x" width="60" height="60">
                       <img src="img/review-photo-2-desktop@1x.png" srcset="img/review-photo-2-desktop@1x.png 1x, img/review-photo-2-desktop@2x.png 2x" width="90" height="90" alt="Давид Иммервар.">
                     </picture>
@@ -820,6 +875,8 @@
                 <div class="reviews__slide review swiper-slide">
                   <div class="review__author">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/review-photo-1-mobile@1x.webp 1x, img/review-photo-1-mobile@2x.webp 2x" width="60" height="60">
+                      <source type="image/webp" srcset="img/review-photo-1-desktop@1x.webp 1x, img/review-photo-1-desktop@2x.webp 2x" width="90" height="90">
                       <source media="(max-width: 767px)" srcset="img/review-photo-1-mobile@1x.png 1x, img/review-photo-1-mobile@2x.png 2x" width="60" height="60">
                       <img src="img/review-photo-1-desktop@1x.png" srcset="img/review-photo-1-desktop@1x.png 1x, img/review-photo-1-desktop@2x.png 2x" width="90" height="90" alt="Сара Аврахам.">
                     </picture>
@@ -875,7 +932,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container">
             <div class="contacts__text-content">
               <h2>
@@ -917,7 +974,7 @@
             </div>
           </div>
         </section>
-        <section class="feedback">
+        <section class="feedback" id="feedback">
           <div class="container">
             <div class="feedback__wrapper">
               <div class="feedback__content form">
@@ -948,20 +1005,18 @@
                       </label>
                     </div>
                     <div class="form__field">
-                      <label>
-                        <div class="custom-select" data-select data-required="true">
-                          <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
-                            <span class="custom-select__text"></span>
-                            <span class="custom-select__icon"></span>
-                          </button>
-                          <span class="custom-select__label">Выберите город</span>
-                          <ul class="custom-select__list">
-                            <li class="custom-select__item" tabindex="0" data-select-value="id-1">Санкт-Петербург</li>
-                            <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
-                            <li class="custom-select__item" tabindex="0" data-select-value="id-3">Санкт-Петербург</li>
-                          </ul>
-                        </div>
-                      </label>
+                      <div class="custom-select" data-select data-required="true">
+                        <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                          <span class="custom-select__text"></span>
+                          <span class="custom-select__icon"></span>
+                        </button>
+                        <span class="custom-select__label">Выберите город</span>
+                        <ul class="custom-select__list">
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-1">Санкт-Петербург</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-3">Санкт-Петербург</li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="form__field form__field--checkbox">
                       <input type="checkbox" id="is-consent" name="is-consent">
@@ -986,32 +1041,32 @@
           </a>
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="#about">
                 О проекте
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="#programs">
                 Программы
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="#details">
                 Как поехать
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="#reviews">
                 Отзывы
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="#news">
                 Новости
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">
+              <a class="footer__link" href="#contacts">
                 Контакты
               </a>
             </li>
@@ -1051,7 +1106,6 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -1079,20 +1133,18 @@
                   </label>
                 </div>
                 <div class="form__field">
-                  <label>
-                    <div class="custom-select" data-select data-required="true">
-                      <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
-                        <span class="custom-select__text"></span>
-                        <span class="custom-select__icon"></span>
-                      </button>
-                      <span class="custom-select__label">Выберите город</span>
-                      <ul class="custom-select__list">
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-1">Санкт-Петербург</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-3">Санкт-Петербург</li>
-                      </ul>
-                    </div>
-                  </label>
+                  <div class="custom-select" data-select data-required="true">
+                    <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+                      <span class="custom-select__text"></span>
+                      <span class="custom-select__icon"></span>
+                    </button>
+                    <span class="custom-select__label">Выберите город</span>
+                    <ul class="custom-select__list">
+                      <li class="custom-select__item" tabindex="0" data-select-value="id-1">Санкт-Петербург</li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="id-3">Санкт-Петербург</li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="form__field form__field--checkbox">
                   <input type="checkbox" id="is-consent-modal" name="is-consent">

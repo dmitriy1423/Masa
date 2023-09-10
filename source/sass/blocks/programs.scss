@@ -81,15 +81,7 @@
 .programs__slider-controls {
   position: relative;
   max-width: 1240px;
-  /* min-width: 640px;
-  width: auto; */
-  /* width: 32.5%; */
-  /* width: 100%; */
-  /* width: fit-content; */
   margin-top: 40px;
-  /* display: flex;
-  justify-content: space-between;
-  gap: 50px; */
   display: grid;
   grid-template-columns: 21fr 1fr;
   justify-content: space-between;
@@ -97,7 +89,6 @@
   align-items: center;
 
   @include vp-1199 {
-    /* max-width: 678px; */
     padding-right: 45px;
   }
 
@@ -108,22 +99,13 @@
     padding: 0;
     position: absolute;
     right: 15px;
-    /* top: -53px; */
     top: 70px;
   }
 }
 
 .programs__slider-scrollbar.swiper-scrollbar {
-  /* max-width: 1134px;
-  min-width: 560px; */
-  /* width: auto; */
-  /* width: 100%; */
   background: rgba(49, 109, 194, 0.2);
   height: 2px;
-
-  @include vp-1199 {
-    /* width: 560px; */
-  }
 
   @include vp-767 {
     display: none;

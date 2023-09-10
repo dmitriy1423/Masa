@@ -11,6 +11,22 @@ export class Accordions {
     this.fullUpdate();
     document.addEventListener('click', this._documentClickHandler);
     window.addEventListener('resize', this._windowResizeHandler);
+
+    document.querySelectorAll('[data-accordion="button"]').forEach((button) => {
+      button.addEventListener('keydown', (evt) => {
+        const element = evt.target.closest('[data-accordion="element"]');
+
+        if (evt.key === 'Enter' && element.classList.contains('is-active')) {
+          this.closeAccordion(element);
+          return;
+        }
+
+        if (evt.key === 'Enter') {
+          this.openAccordion(element);
+        }
+
+      });
+    });
   }
 
   _documentClickHandler(evt) {

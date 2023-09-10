@@ -72,6 +72,15 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  &:hover,
+  &:focus {
+    color: $color-additional;
+  }
+
+  &:active {
+    color: $color-btn-active;
+  }
 }
 
 .footer__social-list {
@@ -135,6 +144,23 @@
     width: 100%;
     height: 1px;
     background-color: $color-default-black;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-additional;
+
+    &::before {
+      background-color: $color-additional;
+    }
+  }
+
+  &:active {
+    color: $color-btn-active;
+
+    &::before {
+      background-color: $color-btn-active;
+    }
   }
 
   @include vp-1199 {

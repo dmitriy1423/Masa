@@ -5,9 +5,9 @@ function initSliders() {
     direction: 'horizontal',
     loop: true,
     allowTouchMove: false,
-    /* autoplay: {
+    autoplay: {
       delay: 3000,
-    }, */
+    },
     breakpoints: {
       0: {
         allowTouchMove: true,

@@ -197,6 +197,20 @@
   }
 
   &--alt-padding {
+    &.is-active {
+      .faq__accordion-button {
+        padding: 33px 40px 31px;
+
+        @include vp-1199 {
+          padding: 23px 30px 25px;
+        }
+
+        @include vp-767 {
+          padding: 19px 15px 19px;
+        }
+      }
+    }
+
     .faq__accordion-button {
       padding: 33px 40px 31px;
 

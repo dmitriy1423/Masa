@@ -21,6 +21,21 @@
   border-radius: 50%;
   background-color: $color-background-blue;
 
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  &:active {
+    background-color: $color-btn-active;
+
+    .social__icon {
+      fill: $color-icon-light;
+    }
+  }
+
   @include vp-767 {
     width: 26px;
     height: 26px;
