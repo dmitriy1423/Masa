@@ -3156,6 +3156,11 @@ button,
   color: #ffffff;
   background-color: #316dc2;
 }
+@media (max-width: 767px) {
+  .header.is-open .header__list {
+    max-height: 400px;
+  }
+}
 
 .header__list {
   display: none;

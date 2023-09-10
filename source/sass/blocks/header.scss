@@ -79,6 +79,10 @@
       border-radius: 16px;
       color: $color-default-white;
       background-color: $color-background-blue;
+
+      @include vp-767 {
+        max-height: 400px;
+      }
     }
   }
 }
