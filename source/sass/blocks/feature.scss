@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 24px;
   color: $color-default-white;
   background-color: $color-background-blue;
   border-radius: 16px;
@@ -32,14 +32,14 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
-    letter-spacing: 0.26px;
+    letter-spacing: -0.7px;
     text-transform: uppercase;
 
     @include vp-1199 {
       max-width: 135px;
       font-size: 20px;
       line-height: 22px;
-      letter-spacing: 0.2px;
+      letter-spacing: -0.5px;
     }
 
     @include vp-767 {
@@ -50,14 +50,21 @@
   }
 
   p {
+    width: fit-content;
     margin: 0;
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
+    letter-spacing: -0.8px;
+
+    @include vp-1199 {
+      letter-spacing: -0.5px;
+    }
 
     @include vp-767 {
       font-size: 14px;
       line-height: 20px;
+      letter-spacing: -0.3px;
     }
   }
 

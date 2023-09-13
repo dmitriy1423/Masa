@@ -59,7 +59,10 @@ export class Form {
   }
 
   _onFormSubmit(event, callback = null) {
-    if (this.validateForm(event.target) && callback) {
+    if (!event.target.querySelector('.custom-select').classList.contains('not-empty')) {
+      event.target.querySelector('.custom-select').classList.add('is-invalid');
+    }
+    if (this.validateForm(event.target) && callback && event.target.querySelector('.custom-select').classList.contains('not-empty')) {
       this._callbacks[callback].successCallback(event);
       if (this._callbacks[callback].reset) {
         setTimeout(() => {

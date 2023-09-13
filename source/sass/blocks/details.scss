@@ -34,6 +34,7 @@
     font-weight: 400;
     font-size: 50px;
     line-height: 50px;
+    letter-spacing: -1.7px;
 
     @include vp-1199 {
       margin-bottom: 26px;
@@ -45,6 +46,7 @@
       margin-bottom: 13px;
       font-size: 20px;
       line-height: 20px;
+      letter-spacing: -0.7px;
     }
   }
 
@@ -53,6 +55,7 @@
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 26px;
+    letter-spacing: -0.5px;
 
     @include vp-1199 {
       padding-right: 110px;
@@ -70,32 +73,31 @@
   }
 
   h3 {
-    margin-top: 0;
-    margin-bottom: 57px;
+    margin-top: 3px;
+    margin-bottom: 54px;
     font-weight: 400;
     font-size: 32px;
     line-height: 36px;
+    letter-spacing: -1px;
 
     @include vp-1199 {
+      margin-top: 0;
       margin-bottom: 40px;
       font-size: 28px;
       line-height: 28px;
+      letter-spacing: -0.8px;
     }
 
     @include vp-767 {
       margin-bottom: 25px;
       font-size: 18px;
       line-height: 22px;
+      letter-spacing: -0.4px;
     }
   }
 
   img {
     border-radius: 16px;
-
-    @include vp-767 {
-      /* width: 100%;
-      height: 100%; */
-    }
   }
 }
 
@@ -158,10 +160,15 @@
   p {
     margin: 0;
     padding: 0;
+    letter-spacing: -0.6px;
+
+    @include vp-767 {
+      letter-spacing: -0.5px;
+    }
   }
 
   @include vp-1199 {
-    padding: 23px 25px 27px;
+    padding: 25px;
   }
 
   @include vp-767 {

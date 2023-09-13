@@ -23,7 +23,7 @@
           <a class="header__logo logo" href="index.html">
             <img src="img/sprite/icon-logo.svg" width="52" height="52" alt="Логотип проекта Маса.">
           </a>
-          <nav class="header__nav">
+          <nav class="header__nav" data-burger>
             <ul class="header__list">
               <li class="header__item">
                 <a class="header__link" href="#about">
@@ -99,7 +99,7 @@
       <section class="hero">
         <div class="hero__slider swiper">
           <div class="swiper-wrapper hero__slider-wrapper">
-            <div class="swiper-slide hero__slider-item">
+            <div class="swiper-slide hero__slider-item hero__slider-item--intership">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/hero-photo-1-mobile@1x.webp 1x, img/hero-photo-1-mobile@2x.webp 2x" width="320" height="289">
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-photo-1-tablet@1x.webp 1x, img/hero-photo-1-tablet@2x.webp 2x" width="768" height="1024">
@@ -110,9 +110,10 @@
               </picture>
               <div class="container">
                 <div class="hero__slider-item-content">
+                    <div class="hero__slider-pagination"></div>
                   <div class="hero__slider-item-title">
                     <h2>
-                      Программы стажировок в&nbsp;крупнейших компаниях
+                      Программы стажировок в&nbsp;крупнейших компаниях Израиля
                     </h2>
                   </div>
                   <div class="hero__slider-item-text-content">
@@ -129,7 +130,7 @@
               </div>
               <div class="hero__slider-item-overlay"></div>
             </div>
-            <div class="swiper-slide hero__slider-item">
+            <div class="swiper-slide hero__slider-item hero__slider-item--volunteer">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/hero-photo-2-mobile@1x.webp 1x, img/hero-photo-2-mobile@2x.webp 2x" width="320" height="289">
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-photo-2-tablet@1x.webp 1x, img/hero-photo-2-tablet@2x.webp 2x" width="768" height="1024">
@@ -140,6 +141,7 @@
               </picture>
               <div class="container">
                 <div class="hero__slider-item-content">
+                    <div class="hero__slider-pagination"></div>
                   <div class="hero__slider-item-title">
                     <h2>
                       Волонтёрские программы &mdash;внесите свой вклад в&nbsp;общество
@@ -159,7 +161,7 @@
               </div>
               <div class="hero__slider-item-overlay"></div>
             </div>
-            <div class="swiper-slide hero__slider-item">
+            <div class="swiper-slide hero__slider-item hero__slider-item--experience">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/hero-photo-3-mobile@1x.webp 1x, img/hero-photo-3-mobile@2x.webp 2x" width="320" height="289">
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/hero-photo-3-tablet@1x.webp 1x, img/hero-photo-3-tablet@2x.webp 2x" width="768" height="1024">
@@ -170,6 +172,7 @@
               </picture>
               <div class="container">
                 <div class="hero__slider-item-content">
+                    <div class="hero__slider-pagination"></div>
                   <div class="hero__slider-item-title">
                     <h2>
                       Глобальный профессиональный опыт обучения за&nbsp;рубежом
@@ -177,7 +180,7 @@
                   </div>
                   <div class="hero__slider-item-text-content">
                     <p>
-                      Погрузитесь в&nbsp;академическую программу, проходя практику в&nbsp;Тель-Авиве и&nbsp;ощущая настоящий израильский стиль!
+                      Погрузитесь в&nbsp;академическую программу, проходя практику в&nbsp;Тель-Авиве и&nbsp;ощущая настоящий израильский стиль жизни!
                     </p>
                     <div class="hero__slider-item-btn">
                       <a class="btn" href="#">
@@ -188,11 +191,6 @@
                 </div>
               </div>
               <div class="hero__slider-item-overlay"></div>
-            </div>
-          </div>
-          <div class="hero__slider-pagination-wrapper">
-            <div class="container">
-              <div class="hero__slider-pagination"></div>
             </div>
           </div>
         </div>
@@ -576,8 +574,8 @@
                 Путешествия
               </li>
             </ul>
-            <div class="news__slider swiper">
-              <div class="news__slider-wrapper swiper-wrapper">
+            <div class="news__slider swiper" data-mobile="false">
+              <div class="news__slider-wrapper swiper-wrapper" data-tablet="false">
                 <div class="news__slide news-card news-card--practice swiper-slide">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/news-card-photo-1-mobile@1x.webp 1x, img/news-card-photo-1-mobile@2x.webp 2x" width="290" height="330">
@@ -939,7 +937,7 @@
                 Контакты
               </h2>
               <dl>
-                <div class="contacts__details-group">
+                <div class="contacts__details-group contacts__details-group--address">
                   <dt>
                     Центральный офис
                   </dt>
@@ -947,7 +945,7 @@
                     г. Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
                   </dd>
                 </div>
-                <div class="contacts__details-group">
+                <div class="contacts__details-group contacts__details-group--tel">
                   <dt>
                     Телефон
                   </dt>
@@ -957,7 +955,7 @@
                     </a>
                   </dd>
                 </div>
-                <div class="contacts__details-group">
+                <div class="contacts__details-group contacts__details-group--email">
                   <dt>
                     E-mail
                   </dt>
@@ -1004,7 +1002,7 @@
                         <span>Ваше сообщение</span>
                       </label>
                     </div>
-                    <div class="form__field">
+                    <div class="form__field form__field--select">
                       <div class="custom-select" data-select data-required="true">
                         <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
                           <span class="custom-select__text"></span>
@@ -1132,7 +1130,7 @@
                     <span>Телефон</span>
                   </label>
                 </div>
-                <div class="form__field">
+                <div class="form__field form__field--select">
                   <div class="custom-select" data-select data-required="true">
                     <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
                       <span class="custom-select__text"></span>

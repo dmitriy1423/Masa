@@ -2,7 +2,7 @@
   background-color: $color-background-default;
 
   .container {
-    padding-top: 120px;
+    padding-top: 125px;
     padding-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -19,6 +19,7 @@
       padding-right: 15px;
       padding-top: 68px;
       padding-bottom: 39px;
+      gap: 32px;
     }
   }
 }
@@ -26,28 +27,33 @@
 .about__text-content {
   h2 {
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
     font-weight: 400;
     font-size: 50px;
     line-height: 50px;
+    letter-spacing: -1.8px;
     color: $color-additional;
 
     @include vp-1199 {
       margin-bottom: 24px;
       font-size: 34px;
+      letter-spacing: -1px;
     }
 
     @include vp-767 {
       margin-bottom: 13px;
       font-size: 20px;
       line-height: 20px;
+      letter-spacing: -0.6px;
     }
   }
 
   h2 + p {
     margin: 0;
+    padding-right: 40px;
     font-size: 22px;
     line-height: 32px;
+    letter-spacing: -0.7px;
 
     @include vp-1199 {
       font-size: 20px;
@@ -57,21 +63,24 @@
     @include vp-767 {
       font-size: 16px;
       line-height: 22px;
+      letter-spacing: -0.5px;
     }
   }
 
   h3 {
     margin-top: 0;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
     font-weight: 400;
     font-size: 32px;
     line-height: 36px;
+    letter-spacing: -1.2px;
     color: $color-additional;
 
     @include vp-1199 {
       margin-bottom: 22px;
       font-size: 28px;
       line-height: 28px;
+      letter-spacing: -0.8px;
     }
 
     @include vp-767 {
@@ -83,11 +92,11 @@
 
   h3 + p {
     margin-top: 0;
-    margin-bottom: 33px;
-    padding-right: 50px;
+    margin-bottom: 32px;
+    padding-right: 65px;
     font-size: 16px;
     line-height: 26px;
-    letter-spacing: 0.18px;
+    letter-spacing: -0.5px;
 
     @include vp-1199 {
       margin-bottom: 35px;
@@ -99,6 +108,15 @@
       margin-bottom: 25px;
       font-size: 14px;
       line-height: 20px;
+      letter-spacing: -0.4px;
+    }
+  }
+
+  &:last-child {
+    margin-top: -6px;
+
+    @include vp-1199 {
+      margin-top: 0;
     }
   }
 }

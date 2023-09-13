@@ -20,11 +20,6 @@ export class Burger {
     }
 
     this._burger.addEventListener('click', this._onBurgerClick);
-    document.querySelectorAll('.header__link').forEach((link) => {
-      link.addEventListener('click', () => {
-        this._closeMenu();
-      });
-    });
   }
 
   _openMenu() {
@@ -51,8 +46,8 @@ export class Burger {
     }
   }
 
-  _onBurgerClick() {
-    if (this._isMenuOpen) {
+  _onBurgerClick(evt) {
+    if (this._isMenuOpen && (Array.from(document.querySelectorAll('.header__link')).includes(evt.target) || Array.from(document.querySelectorAll('[data-burger]')).includes(evt.target))) {
       this._closeMenu();
     } else {
       this._openMenu();

@@ -94,6 +94,10 @@
         color: rgba(240, 239, 233, 0.6);
       }
     }
+
+    @include vp-767 {
+      padding: 18px 25px;
+    }
   }
 
   textarea {

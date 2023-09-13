@@ -33,6 +33,11 @@ window.addEventListener('DOMContentLoaded', () => {
     select.init();
   });
 
+
+  document.querySelector('.about__button').addEventListener('click', () => {
+    document.querySelector('.about__button').blur();
+  });
+
   initSliders();
   initFilter();
   initAccordion();

@@ -7,44 +7,62 @@
   position: relative;
   background-color: $color-background-blue;
 
+  .container {
+    position: relative;
+  }
+
   img {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+  }
 
-    @media (min-width: 1600px) {
-      height: auto;
+  &--experience {
+    .hero__slider-item-title {
+      padding-bottom: 23px;
+
+      @include vp-1199 {
+        padding-bottom: 20px;
+      }
+
+      @include vp-767 {
+        padding-bottom: 15px;
+      }
     }
 
-    @media (min-width: 400px) and (max-width: 767px) {
-      height: auto;
+    .hero__slider-item-text-content {
+      padding-bottom: 27px;
+
+      @include vp-1199 {
+        padding-bottom: 32px;
+      }
+
+      @include vp-767 {
+        padding-bottom: 0;
+      }
     }
   }
 }
 
 .hero__slider-item-content {
-  position: relative;
+  position: absolute;
   z-index: 3;
-  padding-top: 447px;
-  padding-bottom: 60px;
+  left: 100px;
+  bottom: 60px;
 
   @include vp-1199 {
-    padding-top: 714px;
-    padding-bottom: 60px;
+    left: 45px;
   }
 
   @include vp-767 {
-    padding-top: 261px;
-    padding-bottom: 20px;
+    left: 15px;
+    bottom: 20px;
   }
 }
 
 .hero__slider-item-title {
   max-width: 968px;
-  padding: 40px 50px 24px;
+  padding: 40px 50px 28px;
   border-radius: 0 30px 30px 0;
   background-color: $color-background-additional;
 
@@ -54,16 +72,19 @@
     font-weight: 400;
     font-size: 54px;
     line-height: 62px;
+    letter-spacing: -1.8px;
     color: $color-additional;
 
     @include vp-1199 {
       font-size: 36px;
       line-height: 44px;
+      letter-spacing: -1.2px;
     }
 
     @include vp-767 {
       font-size: 22px;
       line-height: 26px;
+      letter-spacing: -0.6px;
     }
   }
 
@@ -85,7 +106,7 @@
   align-items: center;
   gap: 30px;
   max-width: 772px;
-  padding: 0 50px 27px;
+  padding: 0 50px 34px;
   border-radius: 0 0 30px 30px;
   background-color: $color-background-additional;
 
@@ -111,6 +132,7 @@
     margin: 0;
     font-size: 16px;
     line-height: 26px;
+    letter-spacing: -0.6px;
 
     @include vp-1199 {
       line-height: 20px;
@@ -119,9 +141,10 @@
     @include vp-767 {
       max-width: 261px;
       margin-top: -5px;
-      padding: 0 14px 9px;
+      padding: 0 12px 9px 14px;
       border-radius: 0 0 14px 0;
       font-size: 14px;
+      letter-spacing: -0.5px;
       background-color: $color-background-additional;
     }
   }
@@ -173,28 +196,18 @@
 }
 
 .hero__slider-pagination-wrapper {
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  top: 409px;
-
   .container {
     position: relative;
+    padding: 0;
   }
 
   @include vp-1199 {
     top: 676px;
   }
-
-  @include vp-767 {
-    top: 233px;
-  }
 }
 
 .hero__slider-pagination {
-  position: absolute;
-  left: 100px;
-  z-index: 2;
+  position: relative;
   width: fit-content;
   display: flex;
   gap: 12px;
@@ -239,12 +252,7 @@
     }
   }
 
-  @include vp-1199 {
-    left: 45px;
-  }
-
   @include vp-767 {
-    left: 15px;
     border-radius: 12px 12px 0 0;
     padding: 10px 16px;
   }

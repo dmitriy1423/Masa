@@ -101,6 +101,34 @@ function initSliders() {
     },
   });
 
+  const news = document.querySelector('.news__slider');
+  const newsSlides = Array.from(document.querySelectorAll('.news-card'));
+  const mobileWidth = window.matchMedia('(max-width: 767px)');
+
+
+  function mobileSizeNewsSlides() {
+    if (mobileWidth.matches && news.dataset.mobile === 'false') {
+      const firstSlideBelowIndex = Math.ceil(newsSlides.length / 2);
+      for (let i = 0; i < firstSlideBelowIndex; i++) {
+        newsSlides[i].style.height = '330px';
+      }
+      for (let i = firstSlideBelowIndex; i < newsSlides.length; i++) {
+        newsSlides[i].style.height = '240px';
+      }
+      news.dataset.mobile = 'true';
+    }
+
+    if (!mobileWidth.matches) {
+      news.dataset.mobile = 'false';
+      for (let i = 0; i < newsSlides.length; i++) {
+        newsSlides[i].style.height = 'auto';
+      }
+    }
+  }
+
+  mobileSizeNewsSlides();
+  window.addEventListener('resize', mobileSizeNewsSlides);
+
   const reviewsSlider = new Swiper('.reviews__slider', {
     direction: 'horizontal',
     loop: false,

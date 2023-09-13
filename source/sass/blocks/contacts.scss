@@ -55,6 +55,7 @@
       margin-bottom: 0;
       font-size: 34px;
       line-height: 50px;
+      letter-spacing: -0.8px;
     }
 
     @include vp-767 {
@@ -92,6 +93,8 @@
   }
 
   dd {
+    /* width: fit-content;
+    max-width: 134px; */
     margin-left: 0;
     font-size: 16px;
     line-height: 26px;
@@ -122,6 +125,8 @@
 
 .contacts__details-link {
   position: relative;
+  /* width: fit-content;
+  max-width: 134px; */
   font-size: 16px;
   line-height: 26px;
   color: $color-default-white;
@@ -163,6 +168,12 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+
+  &--tel {
+    dd {
+      max-width: 134px;
+    }
+  }
 
   @include vp-1199 {
     gap: 17px;
