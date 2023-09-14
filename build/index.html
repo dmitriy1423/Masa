@@ -1016,8 +1016,8 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="form__field form__field--checkbox">
-                      <input type="checkbox" id="is-consent" name="is-consent">
+                    <div class="form__field form__field--checkbox" data-on-input-validate data-required data-validate-type="checkbox">
+                      <input type="checkbox" id="is-consent" name="is-consent" required>
                       <label for="is-consent">
                         Я согласен на обработку моих персональных данных
                       </label>
@@ -1120,7 +1120,7 @@
               <form method="post" action="https://echo.htmlacademy.ru/">
                 <div class="form__field" data-on-input-validate data-required data-validate-type="text" data-limitation="name">
                   <label>
-                    <input type="text" name="name" required>
+                    <input type="text" name="name" id="modal-name-input" required>
                     <span>Имя</span>
                   </label>
                 </div>
@@ -1144,7 +1144,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="form__field form__field--checkbox">
+                <div class="form__field form__field--checkbox" data-on-input-validate data-required data-validate-type="checkbox">
                   <input type="checkbox" id="is-consent-modal" name="is-consent">
                   <label for="is-consent-modal">
                     Я согласен на обработку моих персональных данных

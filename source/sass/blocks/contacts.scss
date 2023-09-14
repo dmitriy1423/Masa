@@ -93,8 +93,6 @@
   }
 
   dd {
-    /* width: fit-content;
-    max-width: 134px; */
     margin-left: 0;
     font-size: 16px;
     line-height: 26px;
@@ -125,8 +123,6 @@
 
 .contacts__details-link {
   position: relative;
-  /* width: fit-content;
-  max-width: 134px; */
   font-size: 16px;
   line-height: 26px;
   color: $color-default-white;
@@ -171,7 +167,20 @@
 
   &--tel {
     dd {
-      max-width: 134px;
+      /* max-width: 134px;
+
+      @include vp-767 {
+        max-width: 115px;
+      } */
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &--email {
+    dd {
+      display: flex;
+      flex-direction: column;
     }
   }
 

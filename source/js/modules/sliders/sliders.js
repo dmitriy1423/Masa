@@ -13,6 +13,9 @@ function initSliders() {
         allowTouchMove: true,
       },
       768: {
+        allowTouchMove: true,
+      },
+      1200: {
         allowTouchMove: false,
       },
     },
@@ -34,7 +37,7 @@ function initSliders() {
         slidesPerView: 1,
       },
       768: {
-        allowTouchMove: false,
+        allowTouchMove: true,
         slidesPerView: 2.13,
         spaceBetween: 30,
       },
@@ -70,7 +73,7 @@ function initSliders() {
         spaceBetween: 20,
       },
       768: {
-        allowTouchMove: false,
+        allowTouchMove: true,
         slidesPerView: 2,
         grid: {
           rows: 2,
@@ -79,6 +82,7 @@ function initSliders() {
         spaceBetween: 30,
       },
       1200: {
+        allowTouchMove: false,
         slidesPerView: 'auto',
         grid: {
           rows: 1,
@@ -141,11 +145,12 @@ function initSliders() {
         slidesPerView: 1,
       },
       768: {
-        allowTouchMove: false,
+        allowTouchMove: true,
         slidesPerView: 1.28,
         spaceBetween: 30,
       },
       1200: {
+        allowTouchMove: false,
         slidesPerView: 2,
         spaceBetween: 32,
       },

@@ -106,6 +106,7 @@ export class Modals {
   }
 
   _addListeners(modal) {
+    /* document.getElementById('n').focus(); */
     modal.addEventListener('click', this._modalClickHandler);
     document.addEventListener('keydown', this._documentKeydownHandler);
   }
@@ -165,6 +166,7 @@ export class Modals {
     }
 
     setTimeout(() => {
+      document.getElementById('modal-name-input').focus();
       this._addListeners(modal);
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);

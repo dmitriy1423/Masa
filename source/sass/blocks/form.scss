@@ -512,5 +512,16 @@
         background-color: rgba(255, 255, 255, 1);
       }
     }
+
+    &.is-invalid {
+      input[type="checkbox"]:not(:disabled):not(:checked) + label,
+      input[type="checkbox"]:not(:disabled):not(:checked) + label:hover,
+      input[type="checkbox"]:focus:not(:disabled):not(:checked) + label {
+        &::before {
+          border: 1px solid $color-form-error;
+          background-color: rgba(255, 94, 102, 0.2);
+        }
+      }
+    }
   }
 }
