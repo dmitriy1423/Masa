@@ -106,7 +106,6 @@ export class Modals {
   }
 
   _addListeners(modal) {
-    /* document.getElementById('n').focus(); */
     modal.addEventListener('click', this._modalClickHandler);
     document.addEventListener('keydown', this._documentKeydownHandler);
   }
